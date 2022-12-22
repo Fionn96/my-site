@@ -49,7 +49,7 @@ if (isClient) {
         <img v-show="!isDark" h-12 src="/logo-light.svg" alt="logo">
       </router-link> -->
       <router-link class="box-border p-6 opacity-65 hover-op-100" to="/">
-        <span text="lg">hi@fionn</span>
+        <span text="lg">Fionn</span>
         <div i-fa6-solid:angle-right class="prompt inline-block" />
         <span class="blink">_</span>
       </router-link>
