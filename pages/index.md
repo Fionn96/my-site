@@ -3,8 +3,8 @@ headerImage: '/home-favicon.png'
 ---
 
 <div class="flex items-start text-base">
-  <div class="mr-5 mt-10px rounded-full p-1">
-  <img class="my-0 flex h-32 w-32 rounded-full !bg-black/5  dark:!bg-black/80"
+  <div class="mr-5 mt-10px shrink-0 rounded-full border-[0.5px] p-1">
+    <img class="my-0 h-32 w-32 rounded-full"
           src="/home-favicon.png"
           alt="Fionn"/>
   </div>
