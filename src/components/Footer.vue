@@ -7,7 +7,13 @@
     class="flex items-center flex-col-reverse sm:flex-row lt-sm:gap-4 text-4 my-10 justify-between"
   >
     <div class="op-50 text-sm">
-      © Fionn 2022. Build with
+      ©
+      <a
+        class="item"
+        target="_blank"
+        href="mailto:fyx2500253355@gmail.com"
+      >Fionn</a>
+      2022. Build with
       <a
         class="item"
         target="_blank"

@@ -49,29 +49,25 @@ if (isClient) {
         <img v-show="!isDark" h-12 src="/logo-light.svg" alt="logo">
       </router-link> -->
       <router-link class="box-border p-6 opacity-65 hover-op-100" to="/">
-        <span text="lg">Fionn</span>
+        <span text="lg">hi@fionn</span>
         <div i-fa6-solid:angle-right class="prompt inline-block" />
         <span class="blink">_</span>
       </router-link>
 
       <nav class="nav box-border p-8 flex items-center space-x-3">
-        <router-link to="/posts" title="Blog" class="nav-item">
+        <router-link to="/posts" title="Blogs" class="nav-item">
           <div i-carbon-blog class="md:hidden" />
           <span class="lt-md:hidden">Blog</span>
         </router-link>
-        <router-link to="/notes" title="Docs" class="nav-item">
+        <router-link to="/notes" title="Notes" class="nav-item">
           <div i-iconoir:google-docs class="md:hidden" />
-          <span class="lt-md:hidden">Docs</span>
+          <span class="lt-md:hidden">Notes</span>
         </router-link>
         <router-link to="/links" title="Links" class="nav-item">
           <div i-carbon:ibm-cloud-direct-link-1-dedicated class="md:hidden" />
           <span class="lt-md:hidden">Links</span>
         </router-link>
         <span class="nav-divider" />
-
-        <a :href="email" target="_blank" title="Email" rel="noreferrer">
-          <div i-mdi:email-outline />
-        </a>
         <a :href="bilibili" target="_blank" title="Bilibili" rel="noreferrer">
           <div i-ri:bilibili-line />
         </a>

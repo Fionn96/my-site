@@ -431,6 +431,8 @@ work in process...
 | item_telestation::UseTelePosition              |                            |星盘                      |
 | equip_item::ShapeCopyEquip(void)               |装备位置ID相加              |外观传承装备限制            |
 | gplayer_imp::ResetRune(int,int,int)            |                            |元婴道胎值                 |
+|gplayer_imp::GenAmuletStone                    |                              |四灵壁提取概率             |
+|talent_scroll::UpgradeTalentScroll             |                              |升级天赋卷轴               |
 
 |imp::StarSystemStarRemove(int,int,int)::op::GetDuration()||星宿移除时间|
 
