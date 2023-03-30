@@ -18,7 +18,7 @@ export const appName = 'Fionn\'s Blog'
 /** site key  */
 export const giscusConfig = {
   repo: 'Fionn96/my-site',
-  repoId: 'R_kgDOIpmbAA',
+  repoId: 'R_kgDOJQjZ_w',
   category: 'General',
-  categoryId: 'DIC_kwDOIpmbAM4CTK_A',
+  categoryId: 'DIC_kwDOJQjZ_84CVa6v',
 }

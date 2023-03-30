@@ -1,5 +1,5 @@
 ---
-headerImage: '/og/index.png'
+headerImage: '/logo.png'
 ---
 
   <HomeTitle style="display:block;"></HomeTitle>

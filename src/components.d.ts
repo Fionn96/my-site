@@ -28,7 +28,7 @@ declare module '@vue/runtime-core' {
     StepFlow: typeof import('./components/StepFlow.vue')['default']
     StepFlowItem: typeof import('./components/StepFlowItem.vue')['default']
     SubNav: typeof import('./components/SubNav.vue')['default']
-    TocButtons: typeof import('./components/TocButtons.vue')['default']
+    ThemeToggle: typeof import('./components/ThemeToggle.vue')['default']
     VitesstQB: typeof import('./components/icons/VitesstQB.vue')['default']
   }
 }
