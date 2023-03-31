@@ -7,6 +7,7 @@ const router = useRouter()
 
 const posts = router.getRoutes()
   .filter(page => page.path.startsWith('/posts') && page.meta.layout === 'post')
+  .filter((page, index, self) => self.findIndex(p => p.path === page.path) === index)
   .map(
     (page: any): PostRouterRecord => {
       const meta: PageMeta = page.meta

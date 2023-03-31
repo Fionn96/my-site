@@ -6,6 +6,7 @@ import type { PageMeta, PostRouterRecord } from '~build/node'
 const router = useRouter()
 const posts = router.getRoutes()
   .filter(page => page.meta.isLifeStyle)
+  .filter((page, index, self) => self.findIndex(p => p.path === page.path) === index)
   .map(
     (page: any): PostRouterRecord => {
       const meta: PageMeta = page.meta
