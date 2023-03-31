@@ -66,7 +66,6 @@ if (isClient) {
           <div i-ri:rss-line />
         </a>
         <span class="nav-divider" />
-
         <button title="Toggle Color Scheme" @click="toggleDark()">
           <div i="ri-sun-line dark:ri-moon-line" />
         </button>

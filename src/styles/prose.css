@@ -570,7 +570,7 @@ html:not(.dark) .vitesse-dark {
 }
 
 .table-of-contents {
-  --at-apply: w-239px text-sm leading-1.6em fixed top-120px bottom-0 overflow-hidden op-0 transition-all-400;
+  --at-apply: w-239px text-sm leading-1.6em fixed top-120px bottom-0 overflow-hidden op-40 transition-all-400;
   right: calc((100% - 70ch) / 2 - 400px);
 }
 

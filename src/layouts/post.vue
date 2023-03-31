@@ -104,5 +104,6 @@ onMounted(() => {
     <Footer />
     <hr>
     <Giscus />
+    <ScrollToTop />
   </div>
 </template>

@@ -25,6 +25,7 @@ declare module '@vue/runtime-core' {
     PostPager: typeof import('./components/PostPager.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ScrollToTop: typeof import('./components/ScrollToTop.vue')['default']
     StepFlow: typeof import('./components/StepFlow.vue')['default']
     StepFlowItem: typeof import('./components/StepFlowItem.vue')['default']
     SubNav: typeof import('./components/SubNav.vue')['default']

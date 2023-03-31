@@ -12,8 +12,8 @@ const { random } = Math
 const size = reactive(useWindowSize())
 
 const start = ref<Fn>(() => {})
-const init = ref(3)
-const len = ref(5)
+const init = ref(4)
+const len = ref(6)
 const stopped = ref(false)
 
 function initCanvas(canvas: HTMLCanvasElement, width = 400, height = 400, _dpi?: number) {
@@ -49,6 +49,7 @@ onMounted(async () => {
   let prevSteps: Fn[] = []
 
   let iterations = 0
+  let startTime = performance.now()
 
   const step = (x: number, y: number, rad: number) => {
     const length = random() * len.value
@@ -90,7 +91,12 @@ onMounted(async () => {
       controls.pause()
       stopped.value = true
     }
-    prevSteps.forEach(i => i())
+
+    // Check if 8 seconds have elapsed
+    if (performance.now() - startTime >= 8000)
+      controls.pause()
+    else
+      prevSteps.forEach(i => i())
   }
 
   controls = useRafFn(frame, { immediate: false })
@@ -112,19 +118,18 @@ onMounted(async () => {
       steps = steps.slice(0, 2)
     controls.resume()
     stopped.value = false
+    startTime = performance.now() // Record start time when animation is started
+    setTimeout(() => {
+      controls.pause() // Stop animation after 8 seconds
+    }, 8000)
   }
 
   start.value()
 })
-const mask = computed(() => 'radial-gradient(circle, transparent, black);')
 </script>
 
 <template>
-  <div
-    class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none"
-    style="z-index: -1"
-    :style="`mask-image: ${mask};--webkit-mask-image: ${mask};`"
-  >
+  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none" style="z-index: -1">
     <canvas ref="el" width="400" height="400" />
   </div>
 </template>
